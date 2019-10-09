@@ -2,6 +2,9 @@
 
 A simple python program to do basic calcuation from cli !!
 
+#### Overview ####
+The program prompts for user entry asking for the type of calculation they would want to execute. A menu will be verbosed for user to freely choose. From there individual instructions such as "Enter 1st no to add" is carried out for the user.
+
 ## Features
 
 Currently planned features:
@@ -9,8 +12,9 @@ Currently planned features:
 1. Basic Arithmetics
 1. Integer Arithmetics
 1. Text operation parsing
-2. Equation support (?)
+1. Equation support (?)
 1. Unequal support (?)
+1. Negative/Imaginary support (?)
 
 ### Basic Arithmetics
 
