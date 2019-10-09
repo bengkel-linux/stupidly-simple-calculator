@@ -11,7 +11,7 @@ Currently planned features:
 
 1. Basic Arithmetics
 1. Integer Arithmetics
-1. Text operation parsing
+1. Statement based input
 1. Equation support (?)
 1. Unequal support (?)
 1. Negative/Imaginary support (?)
