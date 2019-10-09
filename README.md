@@ -8,9 +8,11 @@ Currently planned features:
 
 1. Basic Arithmetics
 1. Integer Arithmetics
-1. Text operation parsing
+1. Statement based input
 2. Equation support (?)
 1. Unequal support (?)
+
+(?) : Unplanned, but might be a good idea
 
 ### Basic Arithmetics
 
