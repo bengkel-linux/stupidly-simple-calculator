@@ -7,8 +7,8 @@ def apply(string, sarg = {}, darg = {}):
 def execute(statement, sarg = {}, darg = {}):
     stack = []
     for elem in statement :
-        if elem.isdigit() :
-            stack.append(int(elem))
+        if elem[0].isdigit() :
+            stack.append(float(elem))
         elif elem in sarg :
             operand = stack.pop()
             stack.append(sarg[elem](operand))
@@ -23,13 +23,13 @@ def execute(statement, sarg = {}, darg = {}):
 
 
 def tokenize(strng):
-    return filter(None, re.split("([+-/*!\(\)])", strng.replace(" ", "")))
+    return filter(None, re.split("([\+\-\/\*\!\(\)])", strng.replace(" ", "")))
 
 def to_postfix(tokens):
     output = []
     operst = []
     for opt in tokens:
-        if opt.isdigit():
+        if opt[0].isdigit():
             output.append(opt)
         elif opt == ")":
             while True:
