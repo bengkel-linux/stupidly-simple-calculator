@@ -1,5 +1,5 @@
 #module tokenization
-
+import re
 #type of token:
 # Number   (N) :
 # Operator (O) : + - / * ^
@@ -26,10 +26,10 @@ def _token_type(thing):
     }.get(thing, 4)
 
 
-def tokenize_string(strng):
-    return strng.split()
+def tokenize(strng):
+    return filter(None, re.split("([+-/*\(\)])", strng.replace(" ", "")))
 
-def _infix_to_postfix(tokens):
+def to_postfix(tokens):
     res = []
     waiting = 0
     for i in tokens:
