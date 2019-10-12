@@ -1,4 +1,5 @@
 import math
+import parser as pr
 while True:
     print("MENU")
     print("1 for addition :")
@@ -8,6 +9,7 @@ while True:
     print("5 for Division:")
     print("6 for floor division:")
     print("7 for factorial:")
+    print("8 for Statement based:")
     choice=int(input("enter any choice:"))
     def additon():
         a=int(input("enter 1st no to perform addition:"))         #a-first input
@@ -59,6 +61,27 @@ while True:
         floor_division()
     elif choice==7:
         factorial()
+    elif choice==8:
+        statement_wrapper()
     else:
         print("wrong input")
         exit(0)
+
+def statement_wrapper():
+    soper = {'!' : factorial
+    }
+    doper = {
+         '+' : add
+        ,'-' : red
+        ,'*' : mul
+        ,'/' : div
+        ,'^' : power
+    }
+    states=input(">>")
+    result=pr.apply(states, sarg=soper, darg=doper)
+    if(result == None):
+        print("<< Undefined")
+    else:
+        print("<< ", result)
+    return
+    
