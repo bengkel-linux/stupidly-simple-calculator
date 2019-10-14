@@ -72,8 +72,12 @@ while True:
         c = div(a, b)
         print("division is:", c)
         return
-    #def floor_division():
-
+    def floor_division():
+	a = int(input("enter 1st no to perform floor division:"))
+	b = int(input("enter 2nd no to perform floor division:"))
+	c = a // b
+	print("floor division is:",c)
+	return
     def factorial():
         num = int(input("enter a number: "))
         if num < 0:
