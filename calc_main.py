@@ -46,49 +46,49 @@ while True:
         b=int(input("enter 2nd no to perform addition:"))          #b-second input
         c=add(a, b)
         print("sum is:",c)
-        return
+        
     def subtract():
         a = int(input("enter 1st no to perform subtraction:"))
         b = int(input("enter 2nd no to perform subtraction:"))
         c = red(a, b)
         print("subtraction is:", c)
-        return
+        
     def multiplication():
         a = int(input("enter 1st no to perform multipication:"))
         b = int(input("enter 2nd no to perform multiplication:"))
         c = mul(a, b)
         print("multiplication is:", c)
-        return
+        
     def power():
         a = int(input("enter base :"))
         b = int(input("enter power :"))
         c = pow(a, b)
         print("division is:", c)
-        return
+        
 
     def divide():
         a = int(input("enter 1st no to perform division:"))
         b = int(input("enter 2nd no to perform division:"))
         c = div(a, b)
         print("division is:", c)
-        return
+        
     def floor_division():
-	a = int(input("enter 1st no to perform floor division:"))
-	b = int(input("enter 2nd no to perform floor division:"))
-	c = a // b
-	print("floor division is:",c)
-	return
+	    a = int(input("enter 1st no to perform floor division:"))
+	    b = int(input("enter 2nd no to perform floor division:"))
+	    c = a // b
+	    print("floor division is:",c)
+        
     def factorial():
+        res = 0
         num = int(input("enter a number: "))
         if num < 0:
             print("Sorry, factorial does not exist for negative numbers")
         elif num == 0:
             print("The factorial of 0 is 1")
         else:
-            for i in range(1,num + 1):
-                factorial = factorial*i
-                print("The factorial of",num,"is:",factorial)
-        return
+            res = math.factorial(num-1)*num
+            print("The factorial of",num,"is:",res)
+        
 
     if choice==1:
         additon()
