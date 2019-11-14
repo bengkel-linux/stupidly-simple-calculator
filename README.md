@@ -15,16 +15,18 @@
 
 # Stupidly Simple Calculator
 
-A simple python program to do basic calcuation from cli !!
+A simple python program to do basic calcuation from cli and gui using Tkinter module!
 
 #### Overview ####
 The program prompts for user entry asking for the type of calculation they would want to execute. A menu will be verbosed for user to freely choose. From there individual instructions such as "Enter 1st no to add" is carried out for the user.
 A statement based input feature has been implemented on main.
+The GUI calculator is simply just a standard calculator having the same included arithmetics as the cli.
 
 ## Features
 
 Currently planned features:
 
+* GUI interface using Tkinter Python 3.7
 * Basic Arithmetics
 * Integer Arithmetics
 * Statement based input
@@ -43,10 +45,15 @@ basic arithmetics will support basic floating point operators:
 6. **Floor Division**
 7. **Factorial**
 
-#### Installation ####
+#### Installation commandline calculator####
 * requires python ver 2.7
 * cd path to stupidly_simple_calculator
 * to run simply type in cli `python calc_main.py`
+
+#### Installation GUI calculator####
+* requires python ver 3.7
+* install python tkinter module `apt-get install python-tk`(debian)
+* clone this repo and run the program
 
 ## Note
 
